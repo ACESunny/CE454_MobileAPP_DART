@@ -53,65 +53,63 @@ void main(List<String> args) {
   // print("Greade: $grade");
 
 // ASS Car
-//   print("ราคาเช่ารถต่อวัน");
-//   print("[1] รถยนต์ขนาดเล็ก: 700 บาทต่อวัน");
-//   print("[2] รถยนต์ขนาดกลาง: 1,000 บาทต่อวัน");
-//   print("[3] รถยนต์ขนาดใหญ่: 1,500 บาทต่อวัน");
-//   stdout.write("กรุณาเลือกขนาดรถยนต์ที่ต้องการเช่า: ");
-//   int selector = int.parse(stdin.readLineSync()!);
-//   double amount = 0;
-//   switch (selector) {
-//     case 1:
-//       amount += 700;
-//       break;
-//     case 2:
-//       amount += 1000;
-//       break;
-//     case 3:
-//       amount += 1500;
-//       break;
-//     default:
-//       print("คำตอบผิดพลาดกรุณาเริ่มโปรแกรมใหม่อีกครั้ง");
-//   }
-//   double discount = amount;
+  print("ราคาเช่ารถต่อวัน");
+  print("[1] รถยนต์ขนาดเล็ก: 700 บาทต่อวัน");
+  print("[2] รถยนต์ขนาดกลาง: 1,000 บาทต่อวัน");
+  print("[3] รถยนต์ขนาดใหญ่: 1,500 บาทต่อวัน");
+  stdout.write("กรุณาเลือกขนาดรถยนต์ที่ต้องการเช่า: ");
+  int selector = int.parse(stdin.readLineSync()!);
+  double amount = 0;
+  switch (selector) {
+    case 1:
+      amount += 700;
+      break;
+    case 2:
+      amount += 1000;
+      break;
+    case 3:
+      amount += 1500;
+      break;
+    default:
+      print("คำตอบผิดพลาดกรุณาเริ่มโปรแกรมใหม่อีกครั้ง");
+  }
+  double discount = amount;
 
-//   print("\nส่วนลดสำหรับจำนวนวันที่เช่า");
-//   print("[*] เช่า 3-5 วัน: ส่วนลด 5%");
-//   print("[*] เช่า 6-10 วัน: ส่วนลด 10%");
-//   print("[*] เช่า 10 วัน: ส่วนลด 15%");
-//   stdout.write("คุณต้องการเช่ากี่วัน: ");
-//   int date = int.parse(stdin.readLineSync()!);
+  print("\nส่วนลดสำหรับจำนวนวันที่เช่า");
+  print("[*] เช่า 3-5 วัน: ส่วนลด 5%");
+  print("[*] เช่า 6-10 วัน: ส่วนลด 10%");
+  print("[*] เช่า 10 วัน: ส่วนลด 15%");
+  stdout.write("คุณต้องการเช่ากี่วัน: ");
+  int date = int.parse(stdin.readLineSync()!);
 
-//   print(
-//       "\nค่าประกัน\nจะมีค่าใช้จ่ายเพิ่มเติม 200 บาทต่อวัน\n[1] ทำประกัน\n[2] ไม่ทำประกัน");
-//   stdout.write("คุณต้องการทำประกันด้วยไหม?: ");
-//   selector = int.parse(stdin.readLineSync()!);
-//   switch (selector) {
-//     case 1:
-//       amount += 200;
-//       break;
-//     case 2:
-//       break;
-//     default:
-//       print("คำตอบผิดพลาดกรุณาเริ่มโปรแกรมใหม่อีกครั้ง");
-//   }
+  print(
+      "\nค่าประกัน\nจะมีค่าใช้จ่ายเพิ่มเติม 200 บาทต่อวัน\n[1] ทำประกัน\n[2] ไม่ทำประกัน");
+  stdout.write("คุณต้องการทำประกันด้วยไหม?: ");
+  selector = int.parse(stdin.readLineSync()!);
+  switch (selector) {
+    case 1:
+      amount += 200;
+      break;
+    case 2:
+      break;
+    default:
+      print("คำตอบผิดพลาดกรุณาเริ่มโปรแกรมใหม่อีกครั้ง");
+  }
 
-//   if (date > 10) {
-//     discount *= 0.15;
-//   } else if (date > 5) {
-//     discount *= 0.1;
-//   } else if (date > 2) {
-//     discount *= 0.05;
-//   } else {
-//     discount = 0;
-//   }
+  if (date > 10) {
+    discount *= 0.15;
+  } else if (date > 5) {
+    discount *= 0.1;
+  } else if (date > 2) {
+    discount *= 0.05;
+  } else {
+    discount = 0;
+  }
 
-//   double result = amount * date;
-//   print("\nราคาทั้งหมด: $result");
-//   print("ส่วนลดทั้งหมด: $discount");
-//   result -= discount;
-//   print("ราคาสุดท้าย: $result");
+  double result = amount * date;
+  print("\nราคาทั้งหมด: $result");
+  print("ส่วนลดทั้งหมด: $discount");
+  result -= discount;
+  print("ราคาสุดท้าย: $result");
   // -----------------------
-
-  
 }
