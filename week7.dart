@@ -1,16 +1,40 @@
 import 'dart:io';
 
 void main() {
-  // Factorial while loop
-  stdout.write("Please insert Number: ");
-  int num = int.parse(stdin.readLineSync()!);
-  int result = 1, i = 1;
+// List
+  List<String> names = ['Sun', 'Sunny', 'Sunsun'];
+  print(names);
 
-  while (i <= num) {
-    result *= i;
-    i++;
-  }
-  print('Result: $result');
+// ---------------------------
+
+  // for-loop print star
+//   stdout.write("Please insert Number: ");
+//   int num = int.parse(stdin.readLineSync()!);
+
+//   for (int i = num; i != 0; i--) {
+//     String str = "";
+
+//     for (int a = 0; a < (num - i); a++) {
+//       str += " ";
+//     }
+
+//     for (int b = 0; b < i; b++) {
+//       str += "*";
+//     }
+//     print(str);
+//   }
+// ---------------------------
+
+  // Factorial while loop
+//   stdout.write("Please insert Number: ");
+//   int num = int.parse(stdin.readLineSync()!);
+//   int result = 1, i = 1;
+
+//   while (i <= num) {
+//     result *= i;
+//     i++;
+//   }
+//   print('Result: $result');
 // ---------------------------
 
   // Factorial for loop
