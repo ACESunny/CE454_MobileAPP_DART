@@ -112,4 +112,6 @@ void main(List<String> args) {
 //   result -= discount;
 //   print("ราคาสุดท้าย: $result");
   // -----------------------
+
+  
 }
