@@ -8,21 +8,21 @@ void main() {
 // ---------------------------
 
   // for-loop print star
-//   stdout.write("Please insert Number: ");
-//   int num = int.parse(stdin.readLineSync()!);
+  stdout.write("Please insert Number: ");
+  int num = int.parse(stdin.readLineSync()!);
 
-//   for (int i = num; i != 0; i--) {
-//     String str = "";
+  for (int i = num; i != 0; i--) {
+    String str = "";
 
-//     for (int a = 0; a < (num - i); a++) {
-//       str += " ";
-//     }
+    for (int a = 0; a < (num - i); a++) {
+      str += " ";
+    }
 
-//     for (int b = 0; b < i; b++) {
-//       str += "*";
-//     }
-//     print(str);
-//   }
+    for (int b = 0; b < i; b++) {
+      str += "*";
+    }
+    print(str);
+  }
 // ---------------------------
 
   // Factorial while loop
